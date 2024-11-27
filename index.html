@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hollow Knight - Uma Jornada Sombria</title>
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      background-color: #1c1c1c;
+      color: #fefae0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2a363b;
+      color: #e63946;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo img {
+     width: 80px;
+    }
+
+    header nav a {
+      color: #e63946;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    section img {
+      width: 40%;
+      max-width: 600px;
+      height: auto;
+      border: 5px solid #e63946;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+    section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #e63946;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #2a363b;
+      color: #fefae0;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    footer a {
+      color: #e63946;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="https://cdn2.steamgriddb.com/icon/602d1305678a8d5fdb372271e980da6a/32/256x256.png" alt=""></div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#personagens">Personagens</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section>
+    <img src="https://64.media.tumblr.com/4f549e6071c1a5b1b54604507abc3627/691fea4e93678251-fb/s1280x1920/08b559ab98950be5922aa6d523f03d7ca5d07cdf.png" alt="Imagem temática de Hollow Knight">
+    <h1>Uma Jornada Sombria em Hallownest</h1>
+    <p>
+      Hollow Knight é um jogo de aventura e exploração em um mundo sombrio e encantador. 
+      Você assumirá o papel do Cavaleiro, viajando por um vasto reino subterrâneo chamado Hallownest, 
+      enfrentando desafios, descobrindo segredos e desvendando a história do lugar.
+    </p>
+  </section>
+
+  <footer style="background: linear-gradient(135deg, #e63946, #2a363b); color: #fefae0; padding: 2rem; text-align: center; position: relative; overflow: hidden;">
+     <div style="position: absolute; top: -50px; left: 0; right: 0; height: 100px; background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 80%); pointer-events: none;"></div>
+     
+     <div style="margin-bottom: 1.5rem;">
+       <p style="font-size: 1.5rem; margin: 0; font-weight: bold;">Explorando o Mundo de <span style="color: #f4a261;">Hollow Knight</span></p>
+       <p style="margin: 0.5rem 0;">Desenvolvido por Carlos</p>
+     </div>
+     
+     <div style="margin-bottom: 1.5rem;">
+       <a href="https://www.hollowknight.com" target="_blank" style="color: #fefae0; text-decoration: none; font-size: 1.2rem; border: 2px solid #fefae0; padding: 0.5rem 1rem; border-radius: 25px; transition: all 0.3s;">
+         <span style="font-weight: bold;">🌌 Descubra Hallownest</span>
+       </a>
+     </div>
+   
+     <div style="margin-top: 1.5rem;">
+       <a href="" 
+          style="display: inline-block; background: #f4a261; color: #2a363b; font-size: 1.2rem; font-weight: bold; text-decoration: none; padding: 0.7rem 1.5rem; border-radius: 25px; transition: background 0.3s;">
+         ✉ Entre em Contato
+       </a>
+     </div>
+   </footer>
+   
+
+  <script>
+    const navLinks = document.querySelectorAll('header nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.style.fontSize = '1.1rem';
+      });
+      link.addEventListener('mouseleave', () => {
+        link.style.fontSize = '1rem';
+      });
+    });
+  </script>
+</body>
+</html>
